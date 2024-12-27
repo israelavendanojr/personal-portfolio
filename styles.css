@@ -19,7 +19,6 @@ body
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono';
-  /* margin: 25px; */
 }
 
 html {
@@ -188,7 +187,6 @@ h1
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* border: 1px solid var(--color1); */
   object-fit: cover;
 }
 

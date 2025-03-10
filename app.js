@@ -1,3 +1,5 @@
+//welcome type effect
+
 const observer = new IntersectionObserver((entires) =>
 {
     entires.forEach((entry) => 
@@ -58,5 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+//dynamically load project pages
 
+function redirectToProject(projectId) {
+    window.location.href = `project-details.html?project=${projectId}`;
+  }
+  
   

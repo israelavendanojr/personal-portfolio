@@ -60,10 +60,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-//dynamically load project pages
+// //dynamically load project pages
 
-function redirectToProject(projectId) {
-    window.location.href = `project-details.html?project=${projectId}`;
-  }
+// function redirectToProject(projectId) {
+//     window.location.href = `project-details.html?project=${projectId}`;
+//   }
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+    const modalTitle = document.getElementById('projectModalLabel');
+    const modalImg = document.getElementById('projectModalImg');
+    const modalDesc = document.getElementById('projectModalDesc');
+  
+    // Add click listeners to project cards
+    document.querySelectorAll(".project-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const title = card.getAttribute("data-title");
+        const img = card.getAttribute("data-img");
+        const desc = card.getAttribute("data-desc");
+  
+        modalTitle.textContent = title;
+        modalImg.src = img;
+        modalDesc.textContent = desc;
+  
+        modal.show();
+      });
+    });
+  });
   

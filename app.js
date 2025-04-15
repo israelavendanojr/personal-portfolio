@@ -66,25 +66,22 @@ document.addEventListener("DOMContentLoaded", () => {
 //     window.location.href = `project-details.html?project=${projectId}`;
 //   }
   
-  document.addEventListener("DOMContentLoaded", () => {
-    const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
     const modalTitle = document.getElementById('projectModalLabel');
-    const modalImg = document.getElementById('projectModalImg');
-    const modalDesc = document.getElementById('projectModalDesc');
+    const modalImage = document.getElementById('projectImage');
+    const modalDesc = document.getElementById('projectDescription');
+    const modalRepo = document.getElementById('projectRepoLink');
+    const modalTech = document.querySelector('#projectTech span');
   
-    // Add click listeners to project cards
-    document.querySelectorAll(".project-card").forEach(card => {
-      card.addEventListener("click", () => {
-        const title = card.getAttribute("data-title");
-        const img = card.getAttribute("data-img");
-        const desc = card.getAttribute("data-desc");
-  
-        modalTitle.textContent = title;
-        modalImg.src = img;
-        modalDesc.textContent = desc;
-  
-        modal.show();
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalTitle.textContent = card.dataset.title;
+        modalImage.src = card.dataset.img;
+        modalDesc.textContent = card.dataset.desc;
+        modalRepo.href = card.dataset.repo;
+        modalTech.textContent = card.dataset.tech;
       });
     });
   });
-  
+    

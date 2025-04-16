@@ -194,18 +194,31 @@
   </section>
 
 
+
   <section class="container py-5">
     <h2 class="text-center mb-4">Skills</h2>
     <div class="d-flex overflow-auto gap-4 px-2">
 
-      <!-- Programming Languages -->
+      <!-- Languages -->
       <div class="text-center">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60">
         <p>Python</p>
       </div>
       <div class="text-center">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60">
-        <p>JavaScript</p>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60">
+        <p>Java</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="60">
+        <p>C#</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60">
+        <p>C++</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="60">
+        <p>C</p>
       </div>
       <div class="text-center">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60">
@@ -216,11 +229,30 @@
         <p>CSS</p>
       </div>
       <div class="text-center">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60">
-        <p>SQL</p>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60">
+        <p>JavaScript</p>
       </div>
 
-      <!-- Frameworks & Tools -->
+      <!-- Databases -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60">
+        <p>MySQL</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="60">
+        <p>PostgreSQL</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="60">
+        <p>SQLite</p>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="60">
+        <p>SQLAlchemy</p>
+      </div>
+
       <div class="text-center">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="60">
         <p>Flask</p>
@@ -229,17 +261,19 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="60">
         <p>Bootstrap</p>
       </div>
-      <div class="text-center">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="60">
-        <p>PostgreSQL</p>
-      </div>
-      <div class="text-center">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="60">
-        <p>SQLAlchemy</p>
-      </div>
+
+      <!-- Tools -->
       <div class="text-center">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="60">
         <p>Git</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="60">
+        <p>GitHub</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="60">
+        <p>GitLab</p>
       </div>
 
     </div>
@@ -299,13 +333,32 @@
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center flex-md-row-reverse">
         <div class="col-md-6 text-center">
-          <img src="images/about/programming-journey.jpg" class="img-fluid rounded shadow-sm" alt="Coding journey">
+          <div id="carousel-journey" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="images/about/journey/family-image.JPEG" class="d-block w-100" alt="Coding journey">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/journey/highschool_grad.JPG" class="d-block w-100" alt="Project collaboration">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/journey/childhood_dad.jpg" class="d-block w-100" alt="Coding setup">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
         <div class="col-md-6">
           <h4 class="text-accent mb-3">From Hobby to Passion</h4>
           <p>Hello! I’m Israel, a <strong>Computer Science student</strong> at <strong>Western Washington
               University</strong>, graduating in <strong>Spring 2026</strong> with a minor in
-            <strong>Mathematics</strong>.</p>
+            <strong>Mathematics</strong>.
+          </p>
           <p>My programming journey began during COVID, where I first explored <strong>game development through Unity
               and C#</strong>. Years later, my hobby turned into a genuine passion for <strong>building meaningful
               tools</strong> and <strong>solving real-world problems</strong>.</p>
@@ -317,7 +370,26 @@
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
-          <img src="images/about/community.jpg" class="img-fluid rounded shadow-sm" alt="Community engagement">
+          <div id="carousel-journey" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="images/about/community/volunteer-image.jpg" class="d-block w-100" alt="Coding journey">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/life/family-image.JPEG" class="d-block w-100"
+                  alt="Project collaboration">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/community/lowrider-image.jpg" class="d-block w-100" alt="Coding setup">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
         <div class="col-md-6">
           <h4 class="text-accent mb-3">Rooted in Community</h4>
@@ -334,12 +406,32 @@
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center flex-md-row-reverse">
         <div class="col-md-6 text-center">
-          <img src="images/about/lifestyle.jpg" class="img-fluid rounded shadow-sm" alt="Fitness, cooking, music">
+          <div id="carousel-journey" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item">
+                <img src="images/about/life/cooking_pizza.jpg" class="d-block w-100"
+                  alt="Project collaboration">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/life/cooking_teriyaki.jpg" class="d-block w-100" alt="Coding setup">
+              </div>
+              <div class="carousel-item active">
+                <img src="images/about/life/cooking_carne.jpg" class="d-block w-100" alt="Coding journey">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
+        
         <div class="col-md-6">
           <h4 class="text-accent mb-3">Balance & Growth</h4>
-          <p>Outside of academics, I’m passionate about <strong>fitness, cooking, and music</strong>. Fitness keeps me
-            goal-oriented, cooking helps me explore new things, and music keeps me grounded and inspired. These
+          <p>Outside of academics, I’m passionate about <strong>fitness, cooking, and family</strong>. Fitness keeps me
+            goal-oriented, cooking helps me explore new things, and my family keeps me grounded and inspired. These
             interests shape how I work—<strong>with structure, curiosity, and a growth mindset</strong>.</p>
           <p>I’m currently seeking <strong>Summer 2025 internships</strong> where I can apply my experience, grow as a
             developer, and contribute to meaningful work. If my values resonate with your mission, I’d love to connect!
@@ -349,19 +441,6 @@
     </div>
   </section>
 
-
-  <!-- Footer -->
-  <footer class="mt-5">
-    <p class="mb-2">@israelavendanojr</p>
-    <div>
-      <a class="footer-social" href="https://www.linkedin.com/in/israelavendanojr/" target="_blank"><ion-icon
-          name="logo-linkedin"></ion-icon></a>
-      <a class="footer-social" href="https://github.com/israelavendanojr" target="_blank"><ion-icon
-          name="logo-github"></ion-icon></a>
-      <a class="footer-social" href="mailto:israelavendanojr@gmail.com" target="_blank"><ion-icon
-          name="mail-outline"></ion-icon></a>
-    </div>
-  </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

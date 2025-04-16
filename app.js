@@ -60,10 +60,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-//dynamically load project pages
+// //dynamically load project pages
 
-function redirectToProject(projectId) {
-    window.location.href = `project-details.html?project=${projectId}`;
-  }
+// function redirectToProject(projectId) {
+//     window.location.href = `project-details.html?project=${projectId}`;
+//   }
   
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    const modalTitle = document.getElementById('projectModalLabel');
+    const modalImage = document.getElementById('projectImage');
+    const modalDesc = document.getElementById('projectDescription');
+    const modalRepo = document.getElementById('projectRepoLink');
+    const modalTech = document.querySelector('#projectTech span');
   
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalTitle.textContent = card.dataset.title;
+        modalImage.src = card.dataset.img;
+        modalDesc.textContent = card.dataset.desc;
+        modalRepo.href = card.dataset.repo;
+        modalTech.textContent = card.dataset.tech;
+      });
+    });
+  });
+    

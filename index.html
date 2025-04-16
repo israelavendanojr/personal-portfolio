@@ -1,166 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet", href="styles.css">
-    <script defer src="app.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <nav id="navbar">
-      <header id="domain-name">israelavendanojr.com</header>
-      <div id="nav-links">
-        <a class="nav-link" href="#welcome-section">Welcome</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#socials">Contacts</a>
-        <a class="nav-link" href="#about">About</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>israelavendanojr.com</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lora&family=Oswald&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">israelavendanojr.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="welcome-section">
-
-      <div id="welcome-container">
-        <div id="welcome-text">
+  <!-- Welcome Section -->
+  <section id="welcome" class="container py-5">
+    <div class="card shadow-lg border-0 p-4 bg-light">
+      <div class="row align-items-center">
+        <div class="col-md-6">
           <h1><span class="typewriter"></span></h1>
-          <p>An aspiring <strong>Software Engineer</strong> based in Washington State.</p>
+          <p class="lead">An aspiring <strong>Software Developer</strong> at Western Washington University.</p>
         </div>
-
-        <div id="welcome-image">
-          <img src="images/welcome/personal-image-square.jpg">
+        <div class="col-md-6 text-center">
+          <img src="images/welcome/personal-image-square.jpg" class="img-fluid rounded shadow-sm" alt="Personal">
         </div>
       </div>
-    </section>
-    
-    
-    <section id="projects" class="hidden">
-      <h1>Projects</h1>
-      
-      <div id="project-container">
-        <div class="project-tile">
-          <!-- <a href="" target="_blank" rel="noopener noreferrer"> -->
-            
-            <img src="https://i1.wp.com/docs-assets.developer.apple.com/published/09348c5368/a55b1477-4f79-4221-8aa1-ab3ae9f01f89.png?w=1260&ssl=1">
-          <!-- </a> -->
-          <h2>Guassian Filter</h2>
-        </div>
-    
-          <a class="project-tile" href="https://github.com/israelavendanojr/C-Shell" target="_blank" rel="noopener noreferrer">
-            
-            <img src="https://www.redhat.com/rhdc/managed-files/styles/wysiwyg_full_width/private/sysadmin/2022-11/unix50.png.webp?itok=2EV9vffO">
-            <h2>Unix MicroShell</h2>
-          </a>
-        
-          <a class="project-tile" href="https://github.com/israelavendanojr/WWU-Game-Jam" target="_blank" rel="noopener noreferrer">
-            
-            <img src="images/projects/acm-project.png">
-            <h2>Puzzle Platformer</h2>
-          </a>
-        
-          <!-- <a class="project-tile" href="https://moebeats.itch.io/meteor-shower" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.itch.zone/aW1nLzEyNjkxMjA0LnBuZw==/315x250%23c/7qZMRR.png">
-            <h2>Endless Runner</h2>
-          </a> -->
+    </div>
+  </section>
 
-        </div>
+  <!-- Socials Section -->
+  <section id="contacts" class="container py-5">
+    <h1 class="text-center mb-4">Lets Connect!</h1>
+    <div class="row g-4">
 
-        <a class="social-tile" id="project-details" href="project-details.html" target="_blank">
-          <ion-icon name="hammer-outline"></ion-icon>
-          <div class="social-tile-text">
-          <h2>More Project Details</h2>
+      <!-- LinkedIn Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://www.linkedin.com/in/israelavendanojr" target="_blank"
+            class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="logo-linkedin" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">LinkedIn</h5>
+                <p class="mb-0">linkedin.com/in/israelavendanojr</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- GitHub Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://github.com/israelavendanojr" target="_blank" class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="logo-github" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">GitHub</h5>
+                <p class="mb-0">github.com/israelavendanojr</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Resume Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://drive.google.com/file/d/1TMpF2wlpw1m8bQnb6rcNY_8hTJWR4TLb/view?usp=sharing" target="_blank"
+            class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="document" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">Resume</h5>
+                <p class="mb-0">Download my resume</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="mailto:israelavendanojr@gmail.com" class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="mail" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">Email</h5>
+                <p class="mb-0">Contact me via email</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container py-5">
+    <h1 class="text-center mb-5">Projects</h1>
+    <div class="row g-5">
+
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-lg border-0 rounded-4" data-bs-toggle="modal"
+          data-bs-target="#projectModal" data-title="Fitness Plan Generator"
+          data-img="images/projects/myliftplan/myliftplan_plan.png"
+          data-desc="A full-stack web app that creates personalized hypertrophy workout plans based on user preferences. Developed with ease of use and accessibility in mind, making it an ideal tool for users seeking to achieve their fitness goals. The app enhances user engagement with features like plan saving and customized training splits, ensuring a seamless and secure experience. "
+          data-repo="https://github.com/israelavendanojr/workout-generator"
+          data-tech="Flask, Bootstrap, SQLAlchemy, HTML/CSS">
+          <img src="images/projects/myliftplan/myliftplan_form.png" class="card-img-top rounded-top-4"
+            alt="Fitness Generator">
+          <div class="card-body bg-light rounded-bottom-4">
+            <h5 class="card-title text-center mb-2">Fitness Plan Generator - myliftplan.com</h5>
+            <p class="card-text text-muted text-center">Click to learn more.</p>
           </div>
-        </a>
-
-
-    </section>
-    
-      <section id="socials" class="hidden">
-        <h1>Socials</h1>
-        <div class="socials-container hidden">
-          
-          <a class="social-tile" href="https://www.linkedin.com/in/israelavendanojr/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <div class="social-tile-text">
-              <h2>LinkedIn</h2>
-              <p>linkedin.com/in/israelavendanojr</p>
-            </div>
-          </a>
-
-          <a class="social-tile" href="https://github.com/israelavendanojr" target="_blank">
-            <ion-icon name="logo-github"></ion-icon>
-            <div class="social-tile-text">
-              <h2>GitHub</h2>
-              <p>github.com/israelavendanojr</p>
-            </div>
-          </a>
-          
-          <a class="social-tile" href="https://drive.google.com/file/d/1g7OYLA3V0oHenVrQqpV4YmncfI8vvtIf/view?usp=sharing" target="_blank">
-            <ion-icon name="document-text-outline"></ion-icon>
-            <div class="social-tile-text">
-              <h2>Resume</h2>
-              <p>View My Resume</p>
-            </div>
-          </a>
-
-          <a class="social-tile" href="mailto:israelavendanojr@gmail.com" target="_blank">
-            <ion-icon name="mail-outline"></ion-icon>
-            <div class="social-tile-text">
-              <h2>Personal Email</h2>
-              <p>israelavendanojr@gmail.com</p>
-            </div>
-          </a>
-
-        </div>
-      </section>
-    
-    <section id="about" class="hidden">
-      <h1>About Me</h1>
-      <div class="about-row reverse hidden" >
-        <img src="images/about/family-image.JPEG" alt="My wonderful family">
-        <div class="multi-paragraph">
-          <p>Hello! I’m a <span class="bold">Computer Science student</span> at <span class="bold">Western Washington University</span>, set to graduate with a bachelor's degree in <span class="bold">Computer Science</span> and a minor in <span class="bold">Mathematics</span> this upcoming <span class="bold">Spring 2026</span>.</p>
-          <p>Programming for me began as a hobby during COVID through game development using Unity and C#. I quickly learned to love the challenge of building and problem solving. Through code, I’m continuously learning and believe I can make real-world impacts through the skills I’ve acquired.</p>
         </div>
       </div>
-      <div class="about-row hidden">
-        <p>My technical toolbox includes proficiency in <span class="bold">C, Java, Python,</span> and <span class="bold">HTML/CSS,</span> with hands-on experience in both low-level systems programming and high-level application development. I am also adept with industry-standard debugging and version control tools such as <span class="bold">Valgrind</span> and <span class="bold">Git</span>, making me versatile across the software development lifecycle.</p>
-        <img src="images/about/volunteer-image.jpg" alt="Me with a tree I planted">
-      </div>
-      <div class="about-row reverse hidden">   
-        <img src="images/about/lowrider-image.jpg" alt="Lowrider Event">    
-        <div class="multi-paragraph">
-          <p>Beyond coding, I am deeply committed to community engagement. Through active <span class="bold">volunteering</span> and <span class="bold">student-led organizations</span>, I’ve experienced personal growth, growing as a leader and finding purpose working for something beyond myself. </p>
-          <p>As a <span class="bold">first-generation</span> student, I acknowledge the blessing of education I’ve been given and now wish to leverage these newly acquired technical skills to give back and create lasting, meaningful changes.</p>
+                              
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-lg border-0 rounded-4" data-bs-toggle="modal"
+          data-bs-target="#projectModal" data-title="Unix Micro-Shell"
+          data-img="images/projects/myShell/terminal_cover.png"
+          data-desc="A lightweight Unix shell built in C that supports core terminal commands, custom input parsing, and multithreaded execution. Designed for efficiency and clarity, with memory-safe handling and a 61% performance improvement through parallelism tuning."
+          data-repo="https://github.com/israelavendanojr/C-Shell"
+          data-tech="C, Unix System Calls, Multithreading, Valgrind">
+          <img src="images/projects/myShell/terminal_cover.png" class="card-img-top rounded-top-4"
+            alt="Unix Micro-Shell">
+          <div class="card-body bg-light rounded-bottom-4">
+            <h5 class="card-title text-center mb-2">Unix Micro-Shell</h5>
+            <p class="card-text text-muted text-center">Click to learn more.</p>
+          </div>
         </div>
       </div>
-      <div class="about-row hidden">       
-        <p>I am currently seeking <span class="bold">Summer 2025 Internships</span> where I can apply what I've learned and continue to grow as a developer. If my background and passion align with your team’s goals, please don’t hesitate to contact me!</p>
-        <img src="images/about/volunteer-image-2.jpg" alt="Volunteering image">
+            
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-lg border-0 rounded-4" data-bs-toggle="modal"
+          data-bs-target="#projectModal" data-title="Unity Game Projects"
+          data-img="images/projects/unity/unity_game_acm.png"
+          data-desc="A suite of interactive Unity applications designed with a strong emphasis on user experience. These projects showcase scalable architecture, responsive feedback loops, and smooth performance—prioritizing intuitive interfaces and engaging interactions. Developed with reusable components and object-oriented patterns to support maintainability and future feature expansion."
+          data-repo="https://github.com/israelavendanojr/WWU-Game-Jam"
+          data-tech="Unity, C#, OOP, Aseprite, FL Studio">
+          <img src="images/projects/unity/unity_game_acm.png" class="card-img-top rounded-top-4"
+            alt="Unity Game Projects">
+          <div class="card-body bg-light rounded-bottom-4">
+            <h5 class="card-title text-center mb-2">Unity Game Projects</h5>
+            <p class="card-text text-muted text-center">Click to learn more.</p>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
-  
-  <footer>
-    <div id="footer-logo">
-      <p>@israelavendanojr</p>
+                  
     </div>
-    <div id="footer-social-container">
-      <a class="footer-social" href="https://www.linkedin.com/in/israelavendanojr/" target="_blank">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-      <a class="footer-social" href="https://github.com/israelavendanojr" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-      <a class="footer-social" href="mailto:israelavendanojr@gmail.com" target="_blank">
-        <ion-icon name="mail-outline"></ion-icon>      
-      </a>      
+
+
+
+  </section>
+
+
+
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="d-flex overflow-auto gap-4 px-2">
+
+      <!-- Languages -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60">
+        <p>Python</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60">
+        <p>Java</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="60">
+        <p>C#</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60">
+        <p>C++</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="60">
+        <p>C</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60">
+        <p>HTML</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60">
+        <p>CSS</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60">
+        <p>JavaScript</p>
+      </div>
+
+      <!-- Databases -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60">
+        <p>MySQL</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="60">
+        <p>PostgreSQL</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="60">
+        <p>SQLite</p>
+      </div>
+
+      <!-- Frameworks & Libraries -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="60">
+        <p>SQLAlchemy</p>
+      </div>
+
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="60">
+        <p>Flask</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="60">
+        <p>Bootstrap</p>
+      </div>
+
+      <!-- Tools -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="60">
+        <p>Git</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="60">
+        <p>GitHub</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="60">
+        <p>GitLab</p>
+      </div>
+
     </div>
-  </footer>
+  </section>
+
+  <section class="container py-5">
+    <div class="d-flex overflow-auto gap-4 px-2">
+
+      <div class="text-center">
+        <i class="fas fa-comments fa-3x mb-2"></i>
+        <p>Communication</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-users fa-3x mb-2"></i>
+        <p>Teamwork</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-lightbulb fa-3x mb-2"></i>
+        <p>Problem Solving</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-clock fa-3x mb-2"></i>
+        <p>Time Management</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-user-cog fa-3x mb-2"></i>
+        <p>Adaptability</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-bolt fa-3x mb-2"></i>
+        <p>Initiative</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-handshake fa-3x mb-2"></i>
+        <p>Collaboration</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-chart-line fa-3x mb-2"></i>
+        <p>Leadership</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-calendar-check fa-3x mb-2"></i>
+        <p>Organization</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-hands-helping fa-3x mb-2"></i>
+        <p>Community Engagement</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-brain fa-3x mb-2"></i>
+        <p>Critical Thinking</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-heart fa-3x mb-2"></i>
+        <p>Empathy</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-globe-americas fa-3x mb-2"></i>
+        <p>Cultural Awareness</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-tools fa-3x mb-2"></i>
+        <p>Resourcefulness</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-magic fa-3x mb-2"></i>
+        <p>Creativity</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-user-shield fa-3x mb-2"></i>
+        <p>Accountability</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="container py-5">
+    <h1 class="text-center mb-5 text-accent">About Me</h1>
+
+    <!-- Card 1: Background & Journey -->
+    <div class="card shadow-lg border-0 p-4 mb-5">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <div id="carousel-journey-1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="images/about/journey/svc_grad_crop_2.png" class="d-block w-100" alt="College Graduation">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/journey/highschool_grad_crop.jpg" class="d-block w-100" alt="Highschool Graduation">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/journey/childhood_dad.jpg" class="d-block w-100" alt="Childhood Photo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey-1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey-1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-accent mb-3">From Hobby to Passion</h4>
+          <p>Hello! I’m Israel, a <strong>Computer Science student</strong> at <strong>Western Washington
+              University</strong>, graduating in <strong>Spring 2026</strong> with a minor in
+            <strong>Mathematics</strong>.
+          </p>
+          <p>My programming journey began during COVID, where I first explored <strong>game development through Unity
+              and C#</strong>. Years later, my hobby turned into a genuine passion for <strong>building meaningful
+              tools</strong> and <strong>solving real-world problems</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Community & Personal Values -->
+    <div class="card shadow-lg border-0 p-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <div id="carousel-journey-2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="images/about/community/volunteer-image-2.jpg" class="d-block w-100" alt="Coding journey">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/life/family-image.JPEG" class="d-block w-100"
+                  alt="Project collaboration">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/community/lowrider-image.jpg" class="d-block w-100" alt="Coding setup">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey-2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey-2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-accent mb-3">Rooted in Community</h4>
+          <p>As a <strong>first-generation student</strong>, I’ve found purpose in <strong>volunteering</strong> and
+            participating in <strong>student-led organizations</strong>. These experiences have taught me the value of
+            leadership, teamwork, and staying committed to causes beyond myself.</p>
+          <p>Above all, I aim to use my skills not just to build software—but to create <strong>lasting, positive
+              impact</strong>, especially for <strong>underserved communities</strong> and causes that matter.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Interests & Goals -->
+    <div class="card shadow-lg border-0 p-4 mb-5">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <div id="carousel-journey-3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item">
+                <img src="images/about/life/cooking_pizza.jpg" class="d-block w-100"
+                  alt="Project collaboration">
+              </div>
+              <div class="carousel-item">
+                <img src="images/about/life/cooking_teriyaki.jpg" class="d-block w-100" alt="Coding setup">
+              </div>
+              <div class="carousel-item active">
+                <img src="images/about/life/cooking_carne.jpg" class="d-block w-100" alt="Coding journey">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-journey-3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-journey-3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <h4 class="text-accent mb-3">Balance & Growth</h4>
+          <p>Outside of academics, I’m passionate about <strong>fitness, cooking, and family</strong>. Fitness keeps me
+            goal-oriented, cooking helps me explore new things, and my family keeps me grounded and inspired. These
+            interests shape how I work—<strong>with structure, curiosity, and a growth mindset</strong>.</p>
+          <p>I’m currently seeking <strong>Summer 2025 internships</strong> where I can apply my experience, grow as a
+            developer, and contribute to meaningful work. If my values resonate with your mission, I’d love to connect!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Project Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header bg-dark text-light">
+          <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-light">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img id="projectImage" src="" alt="Project Image" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6">
+              <p id="projectDescription" class="mb-3"></p>
+              <div id="projectTech" class="mb-3">
+                <strong>Tech Stack:</strong> <span class="text-muted"></span>
+              </div>
+              <a id="projectRepoLink" href="#" target="_blank" class="btn btn-outline-dark">
+                <ion-icon name="logo-github" class="me-2"></ion-icon>View Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

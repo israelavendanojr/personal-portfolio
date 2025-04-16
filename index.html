@@ -24,21 +24,36 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top bg-dark px-4">
-    <div class="container-fluid d-flex justify-content-between">
-      <span id="domain-name" class="navbar-brand text-light">israelavendanojr.com</span>
-      <div class="d-flex gap-3">
-        <a class="nav-link text-light" href="#welcome-section">Welcome</a>
-        <a class="nav-link text-light" href="#projects">Projects</a>
-        <a class="nav-link text-light" href="#socials">Contacts</a>
-        <a class="nav-link text-light" href="#about">About</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">israelavendanojr.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <!-- Welcome Section -->
-  <section id="welcome-section" class="container py-5">
+  <section id="welcome" class="container py-5">
     <div class="card shadow-lg border-0 p-4 bg-light">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -52,6 +67,75 @@
     </div>
   </section>
 
+  <!-- Socials Section -->
+  <section id="contacts" class="container py-5">
+    <h1 class="text-center mb-4">Lets Connect!</h1>
+    <div class="row g-4">
+
+      <!-- LinkedIn Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://www.linkedin.com/in/israelavendanojr" target="_blank"
+            class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="logo-linkedin" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">LinkedIn</h5>
+                <p class="mb-0">linkedin.com/in/israelavendanojr</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- GitHub Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://github.com/israelavendanojr" target="_blank" class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="logo-github" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">GitHub</h5>
+                <p class="mb-0">github.com/israelavendanojr</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Resume Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="https://drive.google.com/file/d/1uIEp0_kXjZ7Eov-RTz847cwJr0IoL_Rd/view?usp=sharing" target="_blank"
+            class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="document" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">Resume</h5>
+                <p class="mb-0">Download my resume</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="col-md-6">
+        <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
+          <a href="mailto:israelavendanojr@gmail.com" class="text-decoration-none text-light w-100">
+            <div class="d-flex flex-row align-items-center w-100">
+              <ion-icon name="mail" size="large" class="me-3"></ion-icon>
+              <div>
+                <h5 class="mb-1">Email</h5>
+                <p class="mb-0">Contact me via email</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Projects Section -->
   <section id="projects" class="container py-5">
@@ -109,78 +193,108 @@
 
   </section>
 
-<!-- Socials Section -->
-<section id="socials" class="container py-5">
-  <h1 class="text-center mb-4">Socials</h1>
-  <div class="row g-4">
 
-    <!-- LinkedIn Card -->
-    <div class="col-md-6">
-      <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
-        <a href="https://www.linkedin.com/in/israelavendanojr" target="_blank" class="text-decoration-none text-light w-100">
-          <div class="d-flex flex-row align-items-center w-100">
-            <ion-icon name="logo-linkedin" size="large" class="me-3"></ion-icon>
-            <div>
-              <h5 class="mb-1">LinkedIn</h5>
-              <p class="mb-0">linkedin.com/in/israelavendanojr</p>
-            </div>
-          </div>
-        </a>
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="d-flex overflow-auto gap-4 px-2">
+
+      <!-- Programming Languages -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60">
+        <p>Python</p>
       </div>
-    </div>
-
-    <!-- GitHub Card -->
-    <div class="col-md-6">
-      <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
-        <a href="https://github.com/israelavendanojr" target="_blank" class="text-decoration-none text-light w-100">
-          <div class="d-flex flex-row align-items-center w-100">
-            <ion-icon name="logo-github" size="large" class="me-3"></ion-icon>
-            <div>
-              <h5 class="mb-1">GitHub</h5>
-              <p class="mb-0">github.com/israelavendanojr</p>
-            </div>
-          </div>
-        </a>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60">
+        <p>JavaScript</p>
       </div>
-    </div>
-
-    <!-- Resume Card -->
-    <div class="col-md-6">
-      <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
-        <a href="https://drive.google.com/file/d/1uIEp0_kXjZ7Eov-RTz847cwJr0IoL_Rd/view?usp=sharing" target="_blank" class="text-decoration-none text-light w-100">
-          <div class="d-flex flex-row align-items-center w-100">
-            <ion-icon name="document" size="large" class="me-3"></ion-icon>
-            <div>
-              <h5 class="mb-1">Resume</h5>
-              <p class="mb-0">Download my resume</p>
-            </div>
-          </div>
-        </a>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60">
+        <p>HTML</p>
       </div>
-    </div>
-
-    <!-- Email Card -->
-    <div class="col-md-6">
-      <div class="card shadow-sm bg-dark text-light p-3 d-flex flex-row align-items-center">
-        <a href="mailto:israelavendanojr@gmail.com" class="text-decoration-none text-light w-100">
-          <div class="d-flex flex-row align-items-center w-100">
-            <ion-icon name="mail" size="large" class="me-3"></ion-icon>
-            <div>
-              <h5 class="mb-1">Email</h5>
-              <p class="mb-0">Contact me via email</p>
-            </div>
-          </div>
-        </a>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60">
+        <p>CSS</p>
       </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="60">
+        <p>SQL</p>
+      </div>
+
+      <!-- Frameworks & Tools -->
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="60">
+        <p>Flask</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="60">
+        <p>Bootstrap</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="60">
+        <p>PostgreSQL</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="60">
+        <p>SQLAlchemy</p>
+      </div>
+      <div class="text-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="60">
+        <p>Git</p>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="container py-5">
+    <div class="d-flex overflow-auto gap-4 px-2">
 
+      <div class="text-center">
+        <i class="fas fa-comments fa-3x mb-2"></i>
+        <p>Communication</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-users fa-3x mb-2"></i>
+        <p>Teamwork</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-lightbulb fa-3x mb-2"></i>
+        <p>Problem Solving</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-clock fa-3x mb-2"></i>
+        <p>Time Management</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-user-cog fa-3x mb-2"></i>
+        <p>Adaptability</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-bolt fa-3x mb-2"></i>
+        <p>Initiative</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-handshake fa-3x mb-2"></i>
+        <p>Collaboration</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-chart-line fa-3x mb-2"></i>
+        <p>Leadership</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-calendar-check fa-3x mb-2"></i>
+        <p>Organization</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-hands-helping fa-3x mb-2"></i>
+        <p>Community Engagement</p>
+      </div>
+
+    </div>
+  </section>
 
   <section id="about" class="container py-5">
     <h1 class="text-center mb-5 text-accent">About Me</h1>
-  
+
     <!-- Card 1: Background & Journey -->
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center flex-md-row-reverse">
@@ -189,12 +303,16 @@
         </div>
         <div class="col-md-6">
           <h4 class="text-accent mb-3">From Hobby to Passion</h4>
-          <p>Hello! I’m Israel, a <strong>Computer Science student</strong> at <strong>Western Washington University</strong>, graduating in <strong>Spring 2026</strong> with a minor in <strong>Mathematics</strong>.</p>
-          <p>My programming journey began during COVID, where I first explored <strong>game development through Unity and C#</strong>. Years later, my hobby turned into a genuine passion for <strong>building meaningful tools</strong> and <strong>solving real-world problems</strong>.</p>
+          <p>Hello! I’m Israel, a <strong>Computer Science student</strong> at <strong>Western Washington
+              University</strong>, graduating in <strong>Spring 2026</strong> with a minor in
+            <strong>Mathematics</strong>.</p>
+          <p>My programming journey began during COVID, where I first explored <strong>game development through Unity
+              and C#</strong>. Years later, my hobby turned into a genuine passion for <strong>building meaningful
+              tools</strong> and <strong>solving real-world problems</strong>.</p>
         </div>
       </div>
     </div>
-  
+
     <!-- Card 2: Community & Personal Values -->
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center">
@@ -203,12 +321,15 @@
         </div>
         <div class="col-md-6">
           <h4 class="text-accent mb-3">Rooted in Community</h4>
-          <p>As a <strong>first-generation student</strong>, I’ve found purpose in <strong>volunteering</strong> and participating in <strong>student-led organizations</strong>. These experiences have taught me the value of leadership, teamwork, and staying committed to causes beyond myself.</p>
-          <p>Above all, I aim to use my skills not just to build software—but to create <strong>lasting, positive impact</strong>, especially for <strong>underserved communities</strong> and causes that matter.</p>
+          <p>As a <strong>first-generation student</strong>, I’ve found purpose in <strong>volunteering</strong> and
+            participating in <strong>student-led organizations</strong>. These experiences have taught me the value of
+            leadership, teamwork, and staying committed to causes beyond myself.</p>
+          <p>Above all, I aim to use my skills not just to build software—but to create <strong>lasting, positive
+              impact</strong>, especially for <strong>underserved communities</strong> and causes that matter.</p>
         </div>
       </div>
     </div>
-  
+
     <!-- Card 3: Interests & Goals -->
     <div class="card shadow-lg border-0 p-4 mb-5">
       <div class="row align-items-center flex-md-row-reverse">
@@ -217,13 +338,17 @@
         </div>
         <div class="col-md-6">
           <h4 class="text-accent mb-3">Balance & Growth</h4>
-          <p>Outside of academics, I’m passionate about <strong>fitness, cooking, and music</strong>. Fitness keeps me goal-oriented, cooking helps me explore new things, and music keeps me grounded and inspired. These interests shape how I work—<strong>with structure, curiosity, and a growth mindset</strong>.</p>
-          <p>I’m currently seeking <strong>Summer 2025 internships</strong> where I can apply my experience, grow as a developer, and contribute to meaningful work. If my values resonate with your mission, I’d love to connect!</p>
+          <p>Outside of academics, I’m passionate about <strong>fitness, cooking, and music</strong>. Fitness keeps me
+            goal-oriented, cooking helps me explore new things, and music keeps me grounded and inspired. These
+            interests shape how I work—<strong>with structure, curiosity, and a growth mindset</strong>.</p>
+          <p>I’m currently seeking <strong>Summer 2025 internships</strong> where I can apply my experience, grow as a
+            developer, and contribute to meaningful work. If my values resonate with your mission, I’d love to connect!
+          </p>
         </div>
       </div>
     </div>
   </section>
-  
+
 
   <!-- Footer -->
   <footer class="mt-5">
